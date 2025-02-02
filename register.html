@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Create an account</title>
+	<link rel="icon" type="image/x-icon" href="./img/user.ico">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css"> </head>
+
+<body>
+	<div class="form-outer-container w-100 d-flex justify-content-center align-items-start align-items-md-center">
+		<div class="container-lg form-container">
+			<div class="form-outer box-shodow-1 radius-25 w-100 bg-white p-3">
+				<div class="form-inner radius-15 d-flex flex-column flex-xl-row justify-content-stretch w-100 h-100">
+					<div class="flex-1 d-flex justify-content-center align-items-center">
+						<div class="form-img-holder position-relative w-100 d-flex justify-content-center align-items-center"> 
+              <img src="img/register-img.png" class="w-100 h-1uto d-none d-xl-flex"> 
+              <img src="img/signup-icon.png" class="form-mobile-icon position-absolute d-flex d-xl-none">
+            </div>
+					</div>
+					<div class="flex-1 register-form-holder d-flex justify-content-start align-items-center">
+						<div class="px-3 py-4 p-md-5 d-flex w-100 w-md-auto flex-column justify-content-start align-items-start">
+							<h2>Getting Started</h2>
+							<p class="mb-5">Create an account.</p>
+
+							<div class="form-holder w-100">
+								<form class="needs-validation form-floating" novalidate>
+									<div class="row g-3">
+                    <div class="col-12"><p class="mb-0">Personal Details</p></div>
+										<div class="col-md-4">
+											<div class="form-floating">
+												<input type="text" class="form-control" id="first-name" value="" placeholder="First name" required>
+												<label for="first-name" class="">First name</label>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="form-floating">
+												<input type="text" class="form-control" id="middle-name" value="" placeholder="Middle name" required>
+												<label for="middle-name" class="">Middle name</label>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="form-floating">
+												<input type="text" class="form-control" id="last-name" value="" placeholder="Last name" required>
+												<label for="last-name" class="">Last name</label>
+											</div>
+										</div>
+
+
+                    <div class="col-md-4">
+											<div class="form-floating">
+												<input type="date" class="form-control hide-date-format" id="dob" value="" placeholder="Date of Birth" required>
+												<label for="dob" class="">Date of Birth</label>
+											</div>
+										</div>
+                    <div class="col-md-4">
+                      <div class="form-floating">
+                        <select class="form-select" id="gender" required>
+                          <option selected disabled value="">Select...</option>
+                          <option>Male</option>
+                          <option>Female</option>
+                          <option>Other</option>
+                        </select>
+                        <label for="gender" class="form-label">Gender</label>
+											</div>
+                    </div>
+
+                    <div class="col-12"><p class="mb-0 mt-4">Information</p></div>
+										<div class="col-md-6 form-floating">
+											<div class="form-floating">
+												<input type="number" class="form-control hide-num-arrow" id="mobile-number" value="" placeholder="Mobile Number" required>
+												<label for="mobile-number" class="">Mobile Number</label>
+											</div>
+										</div>
+                    <div class="col-md-6 form-floating">
+											<div class="form-floating">
+												<input type="email" class="form-control" id="email-id" value="" placeholder="Email ID" required>
+												<label for="email-id" class="">Email ID</label>
+											</div>
+										</div>
+										
+                    <div class="col-md-6">
+											<div class="form-floating">
+												<input type="text" class="form-control" id="voter-id" value="" placeholder="Voter ID" required>
+												<label for="voter-id" class="">Voter ID</label>
+											</div>
+										</div>
+
+
+                    <div class="col-12"><p class="mb-0 mt-4">Location</p></div>
+										<div class="col-md-6">
+                      <div class="form-floating">
+                        <select class="form-select" id="district-dd" required>
+                          <option selected disabled value="">Select...</option>
+                          <option>Pune</option>
+                          <option>Solapur</option>
+                          <option>Satara</option>
+                          <option>Sangli</option>
+                          <option>Kolhapur</option>
+                        </select>
+                        <label for="district-dd" class="form-label">District DD</label>
+											</div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-floating">
+                        <select class="form-select" id="assembly-dd" required>
+                          <option selected disabled value="">Select...</option>
+                          <option value="pimpri">Pimpri (SC)</option>
+                          <option value="chinchwad">Chinchwad </option>
+                          <option value="bhosari">Bhosari</option>
+                          <option value="maval">Maval</option>
+                          <option value="khed">Khed Alandi</option>
+                          <option value="ambegaon">Ambegaon</option>
+                          <option value="junnar">Junnar</option>
+                          <option value="shirur">Shirur</option>
+                          <option value="hadapsar">Hadapsar</option>
+                          <option value="parvati">Parvati</option>
+                          <option value="wadgaon">Wadgaon Sheri</option>
+                          <option value="kasba">Kasba Peth</option>
+                          <option value="cantonment">Cantonment (SC)</option>
+                          <option value="khadakwasla">Khadakwasla </option>
+                          <option value="shivajinagar">Shivajinagar</option>
+                          <option value="kothrud">Kothrud</option>
+                          <option value="baramati">Baramati</option>
+                          <option value="daund">Daund</option>
+                          <option value="indapur">Indapur</option>
+                          <option value="bhor">Bhor Velha Mulshi</option>
+                          <option value="purandar">Purandar</option>
+                          <option value="karmala">Karmala</option>
+                          <option value="madha">Madha</option>
+                          <option value="barshi">Barshi</option>
+                          <option value="mohol">Mohol</option>
+                          <option value="solapur">Solapur City North</option>
+                          <option value="solapur">Solapur City Central</option>
+                          <option value="akkalkot">Akkalkot</option>
+                          <option value="solapur">Solapur South</option>
+                          <option value="pandharpur">Pandharpur</option>
+                          <option value="sangola">Sangola</option>
+                          <option value="malshiras">Malshiras  (SC)</option>
+                          <option value="phaltan">Phaltan (SC)</option>
+                          <option value="wai">Wai</option>
+                          <option value="koregaon">Koregaon</option>
+                          <option value="man">Man</option>
+                          <option value="karad">Karad North</option>
+                          <option value="karad">Karad South</option>
+                          <option value="patan">Patan</option>
+                          <option value="satara">Satara</option>
+                          <option value="miraj">Miraj (SC)</option>
+                          <option value="sangli">Sangli</option>
+                          <option value="islampur">Islampur</option>
+                          <option value="shirala">Shirala</option>
+                          <option value="palus">Palus Kadegaon</option>
+                          <option value="khanpur">Khanpur</option>
+                          <option value="tasgaon">Tasgaon Kavthe Mahakal</option>
+                          <option value="jat">Jat</option>
+                          <option value="chandgad">Chandgad</option>
+                          <option value="radhanagari">Radhanagari</option>
+                          <option value="kagal">Kagal</option>
+                          <option value="kolhapur">Kolhapur South</option>
+                          <option value="karvir">Karvir</option>
+                          <option value="kolhapur">Kolhapur North</option>
+                          <option value="shahuwadi">Shahuwadi</option>
+                          <option value="hatkanangale">Hatkanangale (SC)</option>
+                          <option value="ichalkaranji">Ichalkaranji</option>
+                          <option value="shirol">Shirol</option>
+                        </select>
+                        <label for="assembly-dd" class="form-label">Assembly DD</label>
+											</div>
+                    </div>
+
+                    <div class="col-12"><p class="mb-0 mt-4">Credentials</p></div>
+										<div class="col-md-6">
+                      <div class="form-floating">
+												<input type="password" class="form-control" id="first-password" value="" placeholder="Password" required>
+												<label for="first-password" class="">Password</label>
+											</div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-floating">
+												<input type="password" class="form-control" id="second-password" value="" placeholder="Confirm Password" required>
+												<label for="second-password" class="">Confirm Password</label>
+											</div>
+                    </div>
+
+
+
+										
+										<div class="col-12 mt-5 d-flex flex-column flex-sm-row gap-3">
+											<a class="btn btn-danger flex-1 py-3 px-5">Cancel</a>
+											<button class="btn btn-primary flex-1 py-3 px-5" type="submit">Submit form</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+        <div class="login-otp-popup form-inner radius-15 d-none flex-column justify-content-stretch">
+					<p>OTP sent on xxxxxxxx<span class="login-mobile-last-digits">89</span></p>
+					<h2 class="mb-5">Enter OTP</h2>
+					<div class="otp-field mb-5">
+						<input type="text" maxlength="1" />
+						<input type="text" maxlength="1" />
+						<input class="space" type="text" maxlength="1" />
+						<input type="text" maxlength="1" />
+						<input type="text" maxlength="1" />
+						<input type="text" maxlength="1" /> </div>
+					<div class="otp-loader d-flex flex-column justify-content-center align-items-center mt-3">
+						<div class="position-absolute d-none flex-column justify-content-center align-items-center otp-loaders"> <img src="img/loading.png" class="otp-loader-icon"> <span class="ps-2">Verifying...</span> </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../Yardi/Flowww"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Registration-Form"
+	}
+}

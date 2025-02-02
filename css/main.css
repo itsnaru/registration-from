@@ -1,0 +1,182 @@
+body{
+    background: #dbe2eb;
+    background: linear-gradient(75deg, #e9ebf5 0%, #d7dce9 50%, rgba(219,226,235,1) 100%);
+    font-family: "Poppins", serif;
+    font-size: 16px;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: "Ubuntu", serif;
+}
+
+.flex-1{
+    flex: 1;
+}
+
+.form-outer-container{
+    min-height: 100vh;
+}
+
+.box-shodow-1{
+    box-shadow: 0 0 25px -10px rgba(193, 207, 228, 0.65);
+}
+
+.radius-15{
+    border-radius: 15px;
+}
+
+.radius-25{
+    border-radius: 25px;
+}
+
+.form-outer{
+    position: relative;
+}
+
+.form-inner{
+    background: linear-gradient(75deg, rgba(255,255,255,1) 0%, rgba(215,220,233,1) 50%, rgba(219,226,235,1) 100%);
+}
+
+.default-input{
+    border: none;
+    outline: none !important;
+    background: rgb(255 255 255 / 30%);
+}
+.default-input:focus{
+    box-shadow: none;
+}
+.incorrect-input{
+  background: rgb(255 158 158 / 30%) !important;
+}
+.text-red{
+  color: #ff6565;
+}
+.form-control.is-invalid, .was-validated .form-control:invalid,
+.form-select.is-invalid, .was-validated .form-select:invalid {
+  border-color: rgb(255 158 158 / 30%);
+  background-color: rgb(255 158 158 / 30%) !important;
+}
+
+input.hide-num-arrow::-webkit-outer-spin-button,
+input.hide-num-arrow::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input.hide-num-arrow[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[value="0000-00-00"]::-webkit-datetime-edit {
+  color: transparent !important; 
+}
+
+.form-mobile-icon{
+  width: 100px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  height: auto;
+  box-shadow: 0 0 25px -10px rgb(64 101 156);
+  
+  top: -58px;
+}
+
+
+
+
+/* OTP CSS */
+.login-otp-popup{
+    position: absolute;
+    width: calc(100% - 32px);
+    height: calc(100% - 32px);
+    top: 16px;
+    left: 16px;
+    z-index: 2;
+
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(75deg, rgba(255,255,255,1) 0%, rgba(215,220,233,1) 50%, rgba(219,226,235,1) 100%);
+    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+.otp-loader-icon{
+    width: 50px;
+    height: auto;
+    animation: rotate-center 1s ease-in-out infinite both;
+}
+.otp-loader .show-loader{
+    display: flex !important;
+}
+.otp-field {
+    display: flex;
+  }
+  
+  .otp-field input {
+    width: 100px;
+    font-size: 32px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 2px;
+    border: 2px solid #55525c;
+    background: #21232d;
+    font-weight: bold;
+    color: #fff;
+    outline: none;
+    transition: all 0.1s;
+
+    background: #d3e3fa;
+    font-weight: bold;
+    color: #1b2e35;
+  }
+  
+  .otp-field input:focus {
+    border: 2px solid #adb7f8;
+    box-shadow: 0 0 6px 0px #a1b1f4;
+  }
+  
+  .disabled {
+    opacity: 0.5;
+  }
+  
+  .space {
+    margin-right: 1rem !important;
+  }
+
+  @media (min-width: 1280px) {
+    .register-form-holder{
+      min-width: 700px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .otp-field input {
+      width: 50px;
+      font-size: 20px;
+    }
+    .form-outer{
+      margin-top: 66px;
+    }
+    .form-img-holder{
+      padding-bottom: 50px;
+      z-index: 3;
+    }
+  }
+
+  @keyframes rotate-center {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes scale-up-center {
+    0% {
+      transform: scale(0.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
